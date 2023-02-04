@@ -1,5 +1,7 @@
 # Random generator
 `random generator` is a random generator for your terminal
 
-# Example
-![example of random generator](.img/example.jpg "Example of Random Generator")
+# Examples
+![example one](.img/example.jpg "Example one")
+![example two](.img/example2.jpg "Example two")
+![example three](.img/example3.jpg "Example three")
