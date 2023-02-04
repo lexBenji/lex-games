@@ -2,4 +2,4 @@
 `random generator` is a random generator for your terminal
 
 # Example
-![.img/example.jpg](example of random generator)
+![example of random generator](.img/example.jpg "Example of Random Generator")
