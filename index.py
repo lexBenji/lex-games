@@ -2,30 +2,14 @@ import random
 import images
 from stuff import *
 
-writeln('Games: rg,rps')
-
 while True:
+    writeln('''
+Games: rg,rps
+Type "exit" to exit.
+''')
     game = input('Choose a game: ').lower()
     if game == 'rg':
-        writeln('+----------+')
-        for i in images.img:
-            write('| ')
-            for j in i:
-                if j == '0':
-                    write(' ')
-                elif j == '1':
-                    write('-')
-                elif j == '2':
-                    write('~')
-                elif j == '3':
-                    write('%')
-                elif j == '4':
-                    write('@')
-                elif j == '5':
-                    write('#')
-            write(' |')
-            writeln('')
-        writeln('+----------+')
+        images.generate()
     elif game == 'rps':
         mc = random.choice(['rock','paper','scissors'])
         rps = input('Choose [r,p,s] ').lower()
