@@ -2,7 +2,7 @@ import random
 import images
 from stuff import *
 
-print('Games: rg,rps')
+writeln('Games: rg,rps')
 
 while True:
     game = input('Choose a game: ').lower()
@@ -30,25 +30,28 @@ while True:
         mc = random.choice(['rock','paper','scissors'])
         rps = input('Choose [r,p,s] ').lower()
         if rps == 'r' or rps == 'rock':
+            writeln(f'I chose {mc}')
             if mc == 'rock':
-                print('tie')
+                writeln('tie')
             elif mc == 'paper':
-                print('i lost')
+                writeln('i lost')
             elif mc == 'scissors':
-                print('you lost')
+                writeln('you lost')
         elif rps == 'paper' or rps == 'p':
+            writeln(f'I chose {mc}')
             if mc == 'rock':
-                print('you lost')
+                writeln('you lost')
             elif mc == 'paper':
-                print('tie')
+                writeln('tie')
             elif mc == 'scissors':
-                print('i lost')
+                writeln('i lost')
         elif rps == 's' or rps == 'scissors':
+            writeln(f'I chose {mc}')
             if mc == 'rock':
-                print('you lost')
+                writeln('you lost')
             elif mc == 'paper':
-                print('i lost')
+                writeln('i lost')
             elif mc == 'scissors':
-                print('tie')
+                writeln('tie')
     elif game == 'exit':
         break
