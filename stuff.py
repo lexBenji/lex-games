@@ -1,11 +1,11 @@
 def write(*text):
     st = ''
     for i in text:
-        st += i
+        st += str(i)
         print(st,end='')
 
 def writeln(*text):
     st = ''
     for i in text:
-        st += i
+        st += str(i)
         print(st)

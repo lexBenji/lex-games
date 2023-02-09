@@ -4,25 +4,25 @@ from stuff import *
 def generate():
     generated = []
     z = ''
-    for i in range(6):
-        for j in range(8):
+    for i in range(4):
+        for j in range(6):
             z += str(random.randint(0,4))
         generated.append(z)
         z = ''
-    writeln('+----------+')
+    writeln('+--------+')
     for i in generated:
         write('| ')
         for j in i:
             if j == '0':
-                write('.')
+                write(' ')
             elif j == '1':
-                write('-')
+                write('.')
             elif j == '2':
-                write('~')
+                write('-')
             elif j == '3':
-                write('@')
+                write('+')
             elif j == '4':
-                write('%')
+                write('=')
         write(' |')
         writeln('')
-    writeln('+----------+')
+    writeln('+--------+')
